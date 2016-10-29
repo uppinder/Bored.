@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "PPAP",
+  "description" : "Random Stuff",
+  "version": "0.1",
+  "browser_action": {
+      "default_title": "PPAP",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"  
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://www.iitg.ernet.in/kvsrikanth/teaching/2016f/att-finger/index.php"],
+        "js": ["content.js"]
+      }
+  ]
+  
+}
